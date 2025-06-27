@@ -60,31 +60,21 @@ st.subheader("📋 Sample Prediction Table")
 st.dataframe(data[[pollutant + "_pred", "Temperature", "Humidity"]].head(10))
 
 # ----------------------------
-# 👥 Team Credits (Professional Look)
+# 👥 Team Credits (Streamlit Compatible)
 # ----------------------------
 st.markdown("---")
-st.markdown(
-    """
-    <div style='text-align: center; font-family: "Segoe UI", sans-serif;'>
+st.markdown("### 💡 Developed as a submission to *Bharatiya Antariksh Hackathon 2025*")
 
-        <div style='font-size:17px; font-weight:600; color:#1E3A8A;'>
-            💡 Developed as a submission to <u>Bharatiya Antariksh Hackathon 2025</u>
-        </div><br>
+st.markdown("#### 👥 Team: `AtmoSphere`")
 
-        <div style='font-size:16px; color:#111827; font-weight:500;'>
-            <b>Team:</b> <span style='color:#0F766E; font-weight:600;'>AtmoSphere</span>
-        </div><br>
+st.markdown("""
+**Atharva** & **Kamakshee**  
+**Gaurav** & **Aditi**  
+*Undergraduate Students, Banaras Hindu University (BHU)*
+""")
 
-        <div style='font-size:15px; color:#374151;'>
-            <b>Atharva</b> & <b>Kamakshee</b><br>
-            <b>Gaurav</b> & <b>Aditi</b><br><br>
-            <i>Undergraduate Students, Banaras Hindu University (BHU)</i>
-        </div><br>
-
-        <div style='font-size:13px; color:#6B7280;'>
-            🔍 Streamlit • AI/ML • Satellite & Ground Data • Geospatial Dashboard
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+<span style='font-size: 13px; color: gray;'>
+🔍 Streamlit • AI/ML • Satellite & Ground Data • Geospatial Dashboard
+</span>
+""", unsafe_allow_html=True)
