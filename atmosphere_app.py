@@ -58,3 +58,25 @@ folium_static(m, width=1200, height=600)
 # Show data table
 st.subheader("📋 Sample Prediction Table")
 st.dataframe(data[[pollutant + "_pred", "Temperature", "Humidity"]].head(10))
+# ----------------------------
+# 👥 Team Credits (Grouped & Professional Footer)
+# ----------------------------
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; font-size:16px; color: #444;'>
+        <b>💡 Developed as a submission to Bharatiya Antariksh Hackathon 2025</b><br><br>
+        
+        <span style='font-size:15px;'>Team: <b style='color:#2E8B57;'>AtmoSphere</b></span><br><br>
+        
+        <span style='font-size:14px;'>
+            <b>Atharva</b> & <b>Kamakshee</b><br>
+            <b>Gaurav</b> & <b>Aditi</b><br>
+            <i>Undergraduate Students, Banaras Hindu University (BHU)</i>
+        </span><br><br>
+        
+        <span style='font-size:13px; color:#888;'>Streamlit • AI-Driven • Data Visualization • ML Powered</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
