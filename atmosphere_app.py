@@ -55,28 +55,32 @@ for _, row in data.iterrows():
 
 folium_static(m, width=1200, height=600)
 
-# Show data table
-st.subheader("📋 Sample Prediction Table")
-st.dataframe(data[[pollutant + "_pred", "Temperature", "Humidity"]].head(10))
 # ----------------------------
-# 👥 Team Credits (Final Clean Version)
+# 👥 Team Credits (Clean + Professional)
 # ----------------------------
 st.markdown("---")
 st.markdown(
     """
-    <div style='text-align: center; font-size:17px; color:#2E8B57; font-weight:bold;'>
-        💡 Developed as a submission to Bharatiya Antariksh Hackathon 2025
-    </div>
-    <br>
-    <div style='text-align: center; font-size:16px;'>
-        <b>Team:</b> <span style='color:#006400; font-weight:bold;'>AtmoSphere</span><br><br>
-        <span style='font-size:15px; color:#000;'>
-            <b>Atharva</b> & <b>Kamakshee</b><br>
-            <b>Gaurav</b> & <b>Aditi</b><br>
-            <i style='color:#444;'>Undergraduate Students, Banaras Hindu University (BHU)</i>
-        </span><br><br>
-        <span style='font-size:13px; color:#666;'>🔍 Streamlit • AI-Driven • Data Visualization • ML Powered</span>
+    <div style='text-align: center; padding-top: 10px;'>
+        <div style='font-size:18px; font-weight:600; color:#1f4e79;'>
+            💡 Developed as a submission to <u>Bharatiya Antariksh Hackathon 2025</u>
+        </div><br>
+        
+        <div style='font-size:16px; font-weight:600; color:#2b7a78;'>
+            Team: <span style='color:#007F5F; font-weight:bold;'>AtmoSphere</span>
+        </div><br>
+        
+        <div style='font-size:15px;'>
+            <span style='color:#444;'><b style='color:#d62828;'>Atharva</b> & <b style='color:#d62828;'>Kamakshee</b></span><br>
+            <span style='color:#444;'><b style='color:#003049;'>Gaurav</b> & <b style='color:#003049;'>Aditi</b></span><br><br>
+            <i style='color:#555;'>Undergraduate Students, Banaras Hindu University (BHU)</i>
+        </div><br>
+        
+        <div style='font-size:13px; color:#6c757d;'>
+            🔍 Powered by Streamlit • AI Models • Data Visualization • ML Integration
+        </div>
     </div>
     """,
     unsafe_allow_html=True
 )
+
